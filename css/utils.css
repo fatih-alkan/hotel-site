@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+:root {
+    --white: #fff;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --dark: #343a40;
+    --light: #f8f9fa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.img {
+    width: 100%;
+}
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+p {
+    margin: 1rem 0;
+}
+.btn {
+    border-radius: .5rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.bg-light {
+    background: var(--light);
+}
+.btn:hover {
+    opacity: .9;
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border: .1rem solid var(--primary);
+}
+.btn-primary-outline {
+    background-color: var(--primary);
+    color: var(--white);
+    border: .1rem solid var(--white);
+}
+.btn-secondary-outline {
+    background-color: var(--secondary);
+    color: var(--white);
+    border: .1rem solid var(--white);
+}
+.flex-items {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+.flex-items > div {
+    padding: 2rem;
+    flex-basis: 100%;
+}
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+@media (max-width:768px) {
+    .flex-items {
+        flex-direction: column;
+    }
+    .flex-items > div {
+        padding: 10px;
+    }
+    .flex.coluımns .column {
+        flex: 100% !important;
+    }
+    .flex-grid .column {
+        flex: 50%;
+    }
+}
